@@ -1,0 +1,12 @@
+:root{
+    --backeground:#F7F7F7;
+    --White:#FFFFFF;
+    --DarkText: #1F1F1F;
+    --SoftGold:#E4C878;
+}
+
+
+body{
+    background: var(--SoftGold);
+    
+}
