@@ -9,6 +9,7 @@ fetch(`https://fakestoreapi.com/products`)
    data.forEach(element => 
    {
     let son = document.createElement("div");
+    son.classList.add("card");
 
 
     let  title_1 = document.createElement("p");
@@ -16,6 +17,7 @@ fetch(`https://fakestoreapi.com/products`)
     title_1.innerHTML =element.title;
     son.appendChild(title_1);
     result.appendChild(son);
+ 
 
 
     
@@ -26,11 +28,13 @@ fetch(`https://fakestoreapi.com/products`)
     result.appendChild(son);
     photo.classList.add("image")
     
+    
     let description = document.createElement("p");
     description.innerHTML = element.description;
     son.appendChild(description);
     result.appendChild(son);
-    description.classList.add("description")
+    description.classList.add("description");
+   
 
 
     let price = document.createElement("p");
@@ -38,7 +42,7 @@ fetch(`https://fakestoreapi.com/products`)
     son.appendChild(price);
     result.appendChild(son);
     price.classList.add("price");
-     
+      
     
     
    });

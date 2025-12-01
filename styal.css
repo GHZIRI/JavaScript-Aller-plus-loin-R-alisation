@@ -1,12 +1,53 @@
 :root{
-    --backeground:#F7F7F7;
-    --White:#FFFFFF;
-    --DarkText: #1F1F1F;
-    --SoftGold:#E4C878;
+    --blue-main: #009BDF;
+    --blue-dark: #00458C;
+    --gray: #A7A9AC;
+    --black: #000000;
+    --orange: #E2823B;
+    --bg: #F6F8FA;
+    --white: #FFFFFF;
+}
+body{
+    background: var(--gray);
+    color: var(--black);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 0;
+    padding: 20px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-
-body{
-    background: var(--SoftGold);
+.card{
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(red, green, blue, 0.2);
+    height: 900px;
     
+}
+.card p{
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: bold;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height:400px;
+    object-fit: contain;
+    display: block;
+}
+#conter{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(  400px, 1fr));
+    gap: 20px;
+    align-items: center;
+   
 }
